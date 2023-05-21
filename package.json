@@ -1,0 +1,25 @@
+{
+  "name": "space-traders-discord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:commands": "node --loader ts-node/esm src/deployCommands.ts",
+    "start:bot": "node --loader ts-node/esm src/index.ts",
+    "start": "npm run start:commands && npm run start:bot"
+  },
+  "author": "Nathan Artisien",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4",
+    "zod": "^3.21.4"
+  }
+}
